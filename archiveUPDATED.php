@@ -153,6 +153,7 @@ $size = 'large';
 						$active = ' active';
 						$icon = ' inactive';
 						$pub = ' pub active';
+						$needPub = 'needPub';
 
 						$link = '<a href="javascript:;"><i class="fa fa-eye"></i></a>';
 
@@ -194,7 +195,7 @@ $size = 'large';
              </div>
 
                    <?php if($link) { ?>
-                   <div id="project_toggle_<?php echo get_the_ID();?>" class="projectToggle <?php echo $icon;?>">
+                   <div id="project_toggle_<?php echo get_the_ID();?>" class="projectToggle <?php echo $icon;?> <?php echo $needPub;?>">
                         <?php echo $link;?>
                    </div>
                    <?php } ?>

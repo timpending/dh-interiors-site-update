@@ -71,8 +71,8 @@ jQuery(document).ready(function($){
 		  }*/
       /* Checks for Publication specific class */
       if(elemClasses.indexOf('needPub') > -1) {
-      	jQuery('#project_toggle_'+project).find('needPub')addClass('pub');
-      }
+      	jQuery('#project_toggle_'+project).find('needPub').addClass('pub');
+      } else {}
 
     	},
 	  afterAction: function (elem) {

@@ -69,10 +69,6 @@ jQuery(document).ready(function($){
 				   toggleWindow(elem.find(".owl-item").eq(current),current);
 			  }
 		  }*/
-      /* Checks for Publication specific class */
-      if(elemClasses.indexOf('needPub') > -1) {
-      	jQuery('#project_toggle_'+project).find('needPub')addClass('pub');
-      }
 
     	},
 	  afterAction: function (elem) {

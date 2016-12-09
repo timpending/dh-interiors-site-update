@@ -38,10 +38,12 @@ $size = 'large';
 						$orientation = 'landscape';
 						$active = ' inactive';
 						$textAlign = 'center';
+						$mobileLandscape = ' mobileLandscape';
 					} else {
 						$orientation = 'portrait';
 						$active = ' active';
 						$textAlign = 'left';
+						$mobileLandscape = '';
 					}
 
 					$title = explode('-',$postData->post_title);
@@ -52,7 +54,7 @@ $size = 'large';
 							<img alt="'.get_the_title().'" src="'.$imgSrc.'">
 
 							<div class="projectCaptionFrame'.$active.'">
-								<div class="projectCaption">
+								<div class="projectCaption'.$mobileLandscape.'">
 
 								<h2>'.trim($title[0]).'</h2>
 								<h1>'.trim($title[1]).'</h1>
@@ -112,12 +114,14 @@ $size = 'large';
 						$textAlign = 'center';
 						//$icon = '';
 						$pub = ' inactive';
+						$mobileLandscape = ' mobileLandscape';
 					} else {
 						$orientation = 'portrait';
 						$active = ' active';
 						$textAlign = 'left';
 						//$icon = ' disabled';
 						$pub = ' active';
+						$mobileLandscape = '';
 					}
 
 
@@ -170,7 +174,7 @@ $size = 'large';
 							<img alt="'.get_the_title().'" src="'.$imgSrc.'">
 
 							<div class="projectCaptionFrame'.$pub.'">
-								<div class="projectCaption">
+								<div class="projectCaption'.$mobileLandscape.'">
 
 								<h2>'.trim($title[0]).'</h2>
 								<h1>'.trim($title[1]).'</h1>

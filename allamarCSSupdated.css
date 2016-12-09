@@ -719,6 +719,9 @@ div.aligncenter {
 .static a{
 	color: #F6F6F6 !important;
 }
+.pub {
+  color: #231F20 !important;
+}
 
 
 /* responsive add-ons */
