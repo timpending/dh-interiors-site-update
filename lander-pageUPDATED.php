@@ -122,7 +122,7 @@ if($thisPostMeta['lander_type'][0] != '') {
 						//all publications are active
 						$active = ' active';
 						$icon = ' inactive';
-						$pub = ' needPub';
+						$pub = ' needPub active';
 
 						$link = '<a href="javascript:;"><i class="fa fa-eye"></i></a>';
 
